@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invalidkaro - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="svg-bg">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="#404040" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,186.7C640,203,800,181,960,149.3C1120,117,1280,75,1360,53.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+      </svg>
+    </div>
+    <div class="container">
+      <h1 class="fade-in">Invalid Karo</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+<!-- Dark/Light Mode Toggle Switch -->
+<button id="themeToggle" aria-label="Toggle dark/light mode" class="theme-toggle">
+  <div class="moon-glow"></div>
+
+  <!-- Sun Icon (unverändert) -->
+  <svg class="icon sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"/>
+    <line x1="12" y1="1" x2="12" y2="3"/>
+    <line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/>
+    <line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  </svg>
+
+  <!-- Moon Icon with integrated cloud -->
+  <svg class="icon moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+    <!-- Original moon shape -->
+    <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 0021 12.79z"/>
+    <!-- Cloud shape in lower quarter -->
+    <path d="M5 17c-.6-2 1.8-4 3.5-3.5 0-2.3 3.5-3.5 5.5-1.5S17 18 14.5 18H5z"
+          fill="currentColor" stroke="none" opacity="0.5"/>
+  </svg>
+</button>
+
+
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>Hi! I'm Karo, a creative developer passionate about design, coding, and building fun web experiences.</p>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="project fade-in" tabindex="0">
+        <h3>My Cool App</h3>
+        <p>An innovative tool that solves real-world problems with clean UI and efficient code.</p>
+        <a href="https://github.com/yourusername/yourrepo" target="" class="github-btn" aria-label="View project on GitHub">
+          <span class="github-text">View on GitHub</span>
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub Logo" class="github-logo" />
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div id="formMessage" role="alert" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Invalidkaro</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
